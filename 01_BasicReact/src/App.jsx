@@ -1,6 +1,11 @@
+import Chai from "./chai";
 
 function App() {
-  return (<h1>Hello React with Vite | Romesh Kumar Tripathi</h1>)
+      const username = "chai aur code";
+ // return fragment <></>
+ return <> 
+      <h1>{username}</h1>
+      </>
 }
 
-export default App
+export default App;
