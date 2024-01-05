@@ -51,3 +51,9 @@ const passwordRef = useRef(null);
 ```
 
 
+# Context API
+    Context API is used to avoid porps drilling in react js
+    
+    Redux is also a solution to state Management.
+    react-Redux, zustand and many more libraries are available for state management.
+
