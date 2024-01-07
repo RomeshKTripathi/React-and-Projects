@@ -16,7 +16,9 @@ function App(){
     Sky:"bg-sky-800", 
 
 }
+  // extracting the keys from the objects.
   const colors = Object.keys(colorClasses);
+  // Using state to update background color class in div-container.
   const [color, setColor] = useState("olive");
 
   return <div className={`w-full bg- h-screen duration-200 ${color}`} >
@@ -24,8 +26,7 @@ function App(){
       
       <div className="text-white flex flex-wrap justify-center gap-2 shadow-xl bg-white px-2 py-2 rounded-full">
           {
-            colors.map((color)=>
-              (<button onClick={()=>setColor(colorClasses[color])} 
+            colors.map((color)=>(<button onClick={()=>setColor(colorClasses[color])} 
         className={`outline-none rounded-full px-4 py-1 ${colorClasses[color]}`} >{color}</button>)
             )
           }

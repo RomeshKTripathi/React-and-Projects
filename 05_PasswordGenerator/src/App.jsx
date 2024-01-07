@@ -3,16 +3,19 @@ import { useCallback } from "react";
 import { useState, useRef } from "react";
 
 function App(){
-
+  // Store the demanded length(from range input)
   const [length, setLength] = useState(8);
+  // store the state if user allowed to include numbers.
   const [numberAllowed, setNumberAllowed] = useState(false);
+  // Store if user allowed to include characters.
   const [charAllowed, setCharAllowed] = useState(false);
+  // store generated password.
   const [password, setPassword] = useState("");
 
-  // use useCallback hook used to perform optimization to over the function which are frequently called by keeping them in the Cache. 
+  // use useCallback hook used to perform optimization to over the function which are frequently called, by keeping them(functions) in the Cache. 
   const passwordGenerator = useCallback(()=>{
     let pass = "";
-    let str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let str = "EFGKvwjklaPQCLMNOoxyrsdefgDJmnbcthiABWXYzRSTUpqIVHuZ";
     if(numberAllowed){
       str += "1234567890";
     }
