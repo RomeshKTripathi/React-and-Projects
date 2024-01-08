@@ -53,7 +53,9 @@ const passwordRef = useRef(null);
 ```
 
 
-# Context API
+# Context API 
+[Read Article](https://www.freecodecamp.org/news/context-api-in-react/)
+
     Context API is used to avoid porps drilling in react js
     
     Redux is also a solution to state Management.
