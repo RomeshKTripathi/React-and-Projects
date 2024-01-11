@@ -8,7 +8,7 @@ import { Store} from './app/Store';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={Store}>
     <div className='w-full h-screen bg-gray-800 p-12'>
-      <App />
+      <App />   
     </div>
   </Provider>
 )
